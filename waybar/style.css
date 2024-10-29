@@ -1,0 +1,121 @@
+@import 'macchiato.css';
+
+* {
+   font-family: "0xProtoNerdFontMono-Regular";
+   font-size: 17px;
+   min-height: 0px;
+}
+
+#waybar {
+  background: transparent;
+  color: @text;
+}
+
+#custom-music,
+#power-profiles-daemon,
+#network,
+#tray,
+#backlight,
+#clock,
+#battery,
+#pulseaudio,
+#custom-lock,
+#workspaces,
+#custom-power {
+  background-color: @surface0;
+  padding: 0.2rem 1rem;
+  margin: 5px 0.4rem;
+  margin-bottom: 0;
+  border-radius: 0.5rem;
+  border-style: solid;
+  border-color: @lavender;
+  border-width: 0.2rem;
+}
+
+#clock {
+  color: @blue;
+  border-color: @blue;
+}
+
+#power-profiles-daemon {
+  color: @peach;
+  border-color: @peach;
+  margin-left: 1rem;
+}
+
+#battery {
+  color: @green;
+  border-color: @green;
+}
+
+#battery.charging {
+  color: @yellow;
+  border-color: @yellow;
+}
+
+#battery.warning:not(.charging) {
+  color: @red;
+}
+
+#battery.critical:not(.charging) {
+  color: @red;
+  border-color: @red;
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+#network {
+  color: @flamingo;
+  border-color: @flamingo;
+}
+
+#workspaces {
+  color: @sapphire;
+  background-color: @crust;
+  border: 0.2rem solid @teal;
+}
+
+#workspaces button {
+  border-style: solid;
+  border-color: @lavender;
+  border-width: 0.2rem;
+  color: @sapphire;
+  margin-left: 0.2rem;
+  background: @surface0;
+  margin-right: 0.2rem;
+}
+
+#workspaces button:hover {
+  border-color: @lavender;
+  border-width: 0.2rem;
+}
+
+#workspaces button.active {
+  border-style: solid;
+  border-color: @sapphire;
+  border-width: 0.2rem;
+}
+
+#pulseaudio {
+  color: @maroon;
+  border-color: @maroon;
+}
+
+#backlight {
+  color: @pink;
+  border-color: @pink;
+}
+
+#custom-music {
+  color: @mauve;
+  border-color: @mauve;
+}
+
+#tray {
+  margin-right: 1rem;
+}

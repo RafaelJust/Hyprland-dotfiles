@@ -1,0 +1,10 @@
+# ignore everything
+/*
+
+#except these
+!.gitignore
+!/hypr/
+!/nvim/
+!/rofi/
+!/waybar/
+!/kitty/
