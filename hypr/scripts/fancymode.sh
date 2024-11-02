@@ -1,4 +1,4 @@
-#/bin/sh
+!#/bin/sh
 current_state=$(hyprctl getoption decoration:drop_shadow | grep 'int:' | awk '{print $2}')
 
 if [ "$current_state" = "0" ]; then
