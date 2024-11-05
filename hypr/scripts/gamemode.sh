@@ -1,9 +1,9 @@
-!#/bin/sh
+#!/bin/sh
 current_state=$(hyprctl getoption animations:enabled | grep 'int:' | awk '{print $2}')
 
-state_fancy=$(hyprctl getoption decoration:drop_shadow | grep 'int:' | awk '{print $2}')
+fancy_disabled=$(hyprctl getoption decoration:blur:new_optimizations | grep 'int:' | awk '{print $2}')
 # Disable fancy mode, if it is on
-if [ "$state_fancy" = "1" ]; then
+if [ "$fancy_disabled" = "1" ]; then
   killall cava
   hyprctl reload
 fi
