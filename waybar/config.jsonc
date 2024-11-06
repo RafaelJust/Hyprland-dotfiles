@@ -4,6 +4,7 @@
   // "width": 1280, // Waybar width
   // Choose the order of the modules
   "modules-left": [
+    "custom/arch",
     "power-profiles-daemon",
     "network",
     "hyprland/workspaces"
@@ -18,6 +19,11 @@
     "clock",
     "tray"
   ],
+  "custom/arch": {
+    "format": "  ",
+    "tooltip": false,
+    "on-click": "sh $HOME/.config/rofi/bin/powermenu"
+  },
   "power-profiles-daemon": {
     "format": "{icon}",
     "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
@@ -72,7 +78,7 @@
     "on-click": "playerctl play-pause",
     "on-click-right": "playerctl next",
     "on-click-middle": "playerctl previous",
-    "max-length": 100
+    "max-length": 50
   },
   "clock": {
     "timezone": "Europe/Amsterdam",
@@ -131,6 +137,6 @@
         " "
       ]
     },
-    "on-click": "pavucontrol"
+    "on-click": "pwvucontrol"
   }
 }
