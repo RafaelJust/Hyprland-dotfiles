@@ -3,6 +3,8 @@
 These are my personal dotfiles I personally use on Hyprland (Arch Linux), using the catppuccin macchiato color schemes.
 I use lazyvim for coding and waypaper for wallpaper.
 
+This repo is mostly for myself to restore my configs when i inevitablu mess something up on my system.
+
 # Dependencies
 Hyprland:
 ```sh
