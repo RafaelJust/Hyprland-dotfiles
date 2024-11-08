@@ -33,17 +33,13 @@
   border-width: 0.2rem;
 }
 
-#custom-arch {
-  padding: 0.2rem 0.1rem;
-  margin-left: 1rem;
-}
-
 #clock {
   color: @blue;
   border-color: @blue;
 }
 
 #power-profiles-daemon {
+  margin-left: 1rem;
   color: @peach;
   border-color: @peach;
 }
