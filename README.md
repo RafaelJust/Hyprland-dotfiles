@@ -4,6 +4,12 @@ These are my personal dotfiles I personally use on Hyprland (Arch Linux), using 
 I use lazyvim for coding and waypaper for wallpaper.
 
 This repo is mostly for myself to restore my configs when i inevitably mess something up on my system.
+Wallpapers get cycled through at ~/Pictures/wallpapers, and are split into subdirectories "weeb" and "non-weeb".
+
+SUPER + CTRL + F = toggle fancy mode (cava bg)
+SUPER + SHIFT + G = toggle gamemode (no animations)
+SUPER + W = toggle weeb mode (wallpaper subdirs)
+SUPER + SHIFT + W = New random wallpaper.
 
 # Dependencies
 Hyprland:
