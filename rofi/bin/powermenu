@@ -8,7 +8,6 @@ if [[ "$DIR" == "powermenus" ]]; then
   shutdown="󰐥"
   reboot="󰜉"
   lock="󰍁"
-  tty="󰞷 "
   logout="󰍃 "
   ddir="$HOME/.config/rofi/config"
 else
@@ -24,14 +23,12 @@ else
     shutdown="󰐥"
     reboot="󰜉"
     lock="󰍁"
-    tty="󰞷"
     logout="󰍃"
 
   else
     shutdown="󰐥"
     reboot="󰜉"
     lock="󰍁"
-    tty="󰞷"
     logout="󰍃"
   fi
   ddir="$HOME/.config/rofi/config"
@@ -49,7 +46,7 @@ show_msg() {
 }
 
 # Variable passed to rofi
-options="$lock\n$tty\n$logout\n$reboot\n$shutdown"
+options="$lock\n$logout\n$reboot\n$shutdown"
 
 chosen="$(echo -e "$options" | $rofi_command -p "UP - $uptime" -dmenu -selected-row 0)"
 case $chosen in
@@ -75,9 +72,6 @@ $reboot)
   ;;
 $lock)
   hyprlock
-  ;;
-$tty)
-  run0 sh /home/rafael/Scripts/reboot_tty.sh
   ;;
 $logout)
   ans=$(rdialog &)
