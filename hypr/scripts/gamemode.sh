@@ -15,7 +15,6 @@ if [ "$current_state" = "1" ]; then
   hyprctl keyword general:gaps_out 0
   hyprctl keyword decoration:rounding 0
   hyprctl keyword decoration:blur:enabled 0
-  hyprctl keyword general:col.active_border ffb7bdf8
   killall wallpaper.sh
   killall hyprpaper
   hyprctl notify 5 2000 0 "Gamemode Enabled!"
