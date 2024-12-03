@@ -1,7 +1,10 @@
 #!/bin/zsh
-waypaper --folder /home/rafael/Pictures/wallpapers/non-weeb --random
 while [[ true ]]; do
-  waypaper --random
+  echo "Try"
+  fn=$(find /home/rafael/Pictures/wallpapers | shuf -n 1)
+  echo $fn
+  swww img ${fn}
+  echo ":D"
   sleep 120
 done
 
