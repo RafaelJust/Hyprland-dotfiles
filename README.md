@@ -18,7 +18,7 @@ paru -S grimblast-git \
 kitty \
 hyprland-git \
 hyprlock \
-hyprpaper \
+swww \
 hyprpicker \
 hyprpolkitagent-git \
 hyprshot \
