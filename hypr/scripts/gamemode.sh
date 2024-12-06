@@ -16,7 +16,6 @@ if [ "$current_state" = "1" ]; then
   hyprctl keyword decoration:rounding 0
   hyprctl keyword decoration:blur:enabled 0
   killall wallpaper.sh
-  killall hyprpaper
   hyprctl notify 5 2000 0 "Gamemode Enabled!"
 else
   #recover from gamemode
