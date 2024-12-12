@@ -1,6 +1,6 @@
 #!/bin/sh
 FILE=/tmp/weeb-mode
-if [[ -f $FILE ]]; then
+if [ -f $FILE ]; then
   waypaper --folder /home/rafael/Pictures/wallpapers/non-weeb --random
   rm /tmp/weeb-mode
   hyprctl notify 3 2000 0 "Weeb mode disabled!"
